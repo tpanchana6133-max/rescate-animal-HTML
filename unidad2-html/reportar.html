@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  
+<head> <title>Reportar rescate | Sistema de Rescate y Adopción Animal</title>
+   
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+
+    <header>
+        <img src="assets/img/logo.png" alt="Logo del refugio" width="80">
+        <h1>Sistema de control de Rescate y Adopción Animal</h1>
+          <p> Refugio Patitas de Esperanza</p>  
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="reportar.html">Reportar rescates</a></li>
+            <li><a href="rescates.html">Ver rescates</a></li>
+        </ul>
+    </nav>
+    
+    <main>
+        <section>
+            <h2>Reportar un nuevo rescate</h2>
+            <p> Completa los datos del animal encontrado. 
+                Un voluntario revisará el caso.</p>
+            
+        <form>
+           <label for="titulo">Título del caso: </label>
+           <input type="text" id="titulo" name="titulo" placeholder="Ej. Gato abandonado en un parque">
+           
+           <label for="categoria">Categoria:</label>
+            <select id="categoria" name="categoria">
+                <option value="">Seleccione una categoria</option>
+                <option value="perros">Perros</option>
+                <option value="gatos">Gatos</option>
+                <option value="fauna">Fauna Silvestre</option>
+            </select>
+         <p>Nivel de urgencia médica:</p>
+
+         <label>
+            <input type="radio" id="urgencia-alta" name="urgencia" value="alta">
+            alta 
+         </label>
+
+         <label> 
+            <input type="radio" id="urgencia-media" name="urgencia" value="media">
+            media
+         </label>
+           
+        <label>
+            <input type="radio" id="urgencia-baja" name="urgencia" value="baja">
+            baja
+        </label>
+        
+         <label for="descripcion">Descripción del estado en que se encontró:</label>
+         <textarea id="descripcion" name="descripcion" rows="5"></textarea>
+        </form>
+        <button type="submit">Registrar rescate</button>
+        </section>
+    </main>
+    <footer>
+        <p>Refugio Patitas de Esperanza - Montecristi, Ecuador</p>
+        <p>Contacto: patitas@esperanza.org | +593 99 486 7003</p>
+        <p>&copy; 2026 Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
